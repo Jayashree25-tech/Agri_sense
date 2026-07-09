@@ -1,0 +1,23 @@
+{
+  "name": "agrisense-server",
+  "version": "1.0.0",
+  "description": "AgriSense backend: weather-driven crop advisory engine",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build": "vite build",
+    "client:dev": "vite"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10",
+    "@vitejs/plugin-react": "^4.3.3"
+  }
+}

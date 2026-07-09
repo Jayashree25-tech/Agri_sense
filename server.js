@@ -130,6 +130,11 @@ app.get('/api/advisory', async (req, res) => {
   }
 });
 
+// ---- FIXED: Catch-all route to serve the frontend application ----
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`\n🌾 AgriSense server running at http://localhost:${PORT}\n`);
 });
